@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="jetbot_ros" name="cam0" type="jetbot_camera"/>
+  <node pkg="jetbot_ros" name="cam1" type="jetbot_camera_v4l2"/>
+ <node pkg="rosbag" type="record" name="rosbag_record_cam"
+       args="record -o /media/ery/2DC59CB95F7FC973/dataset/camlog /cam0/image_raw /cam1/image_raw"/> 
+</launch>

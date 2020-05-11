@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="jetbot_ros" name="cam0" type="jetbot_camera"/>
+  <node pkg="jetbot_ros" name="cam1" type="jetbot_camera_v4l2"/>
+</launch>
