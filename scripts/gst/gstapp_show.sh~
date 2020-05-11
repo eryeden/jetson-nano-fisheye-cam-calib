@@ -1,1 +1,0 @@
-gst-launch-1.0 nvarguscamerasrc tnr-mode=0 tnr-strength=0 exposuretimerange="34000 200000000" ispdigitalgainrange="1 1" gainrange="1 8" ! 'video/x-raw(memory:NVMM),width=1280, height=720, framerate=60/1, format=NV12' ! nvvidconv flip-method=0 ! 'video/x-raw,width=1280, height=720' ! nvvidconv ! nvegltransform ! nveglglessink -e
